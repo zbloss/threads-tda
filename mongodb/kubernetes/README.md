@@ -1,6 +1,6 @@
 # Kubernetes
 
-If you have access to a kubernetes cluster and do not want to install MongoDB with a [Helm Chart](https://helm.sh), you will find everything you need to get up and running here!
+If you have access to a Kubernetes cluster and do not want to install MongoDB with a [Helm Chart](https://helm.sh), you will find everything you need to get up and running here!
 
 ## Getting Started
 
