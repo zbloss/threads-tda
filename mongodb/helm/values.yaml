@@ -1,0 +1,35 @@
+image:
+  registry: docker.io
+  repository: bitnami/mongodb
+  tag: 6.0.7-debian-11-r0
+  pullPolicy: IfNotPresent
+
+auth:
+  enabled: true
+  rootUser: user
+  rootPassword: "password"
+  image:
+    registry: docker.io
+    repository: bitnami/nginx
+    tag: 1.25.1-debian-11-r5
+    pullPolicy: IfNotPresent
+  resources:
+    limits:
+      cpu: 100m
+      memory: 50Mi
+
+replicaCount: 1
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 250Mi
+
+containerPorts:
+  mongodb: 27017
+
+service:
+  type: ClusterIP
+  portName: mongodb
+  ports:
+    mongodb: 27017
