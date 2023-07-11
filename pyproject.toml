@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "threads-tda"
+version = "0.0.1"
+description = "Performing Topological Data Analysis on top of the new [Threads](https://www.threads.net/) platform."
+authors = ["Zach Bloss <zacharybloss@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "threads_tda"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = "2.0.1"
+pymongo = {extras = ["srv"], version = "^4.4.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
