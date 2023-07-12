@@ -11,6 +11,7 @@ packages = [{include = "threads_tda"}]
 python = "^3.9"
 torch = "2.0.1"
 pymongo = {extras = ["srv"], version = "^4.4.0"}
+threads-net = "^0.0.30"
 
 
 [build-system]
