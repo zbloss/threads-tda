@@ -1,1 +1,2 @@
-from .user import UserModel
+from .user import *
+from .thread import *
