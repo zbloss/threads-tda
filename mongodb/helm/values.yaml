@@ -29,7 +29,13 @@ containerPorts:
   mongodb: 27017
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   portName: mongodb
   ports:
     mongodb: 27017
+
+persistence:
+  # existingClaim: mongodb-data
+  accessModes:
+    - ReadWriteOnce
+  size: 10Gi
