@@ -1,2 +1,2 @@
-from .user import *
 from .thread import *
+from .user import *

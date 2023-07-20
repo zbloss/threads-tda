@@ -15,8 +15,8 @@ auth:
     pullPolicy: IfNotPresent
   resources:
     limits:
-      cpu: 100m
-      memory: 50Mi
+      cpu: 500m
+      memory: 512Mi
 
 replicaCount: 1
 

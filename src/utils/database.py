@@ -1,6 +1,8 @@
-from pymongo import MongoClient
-from .settings import MongoSettings 
+import os
 
-mongo_settings = MongoSettings()
-mongo_client = MongoClient(mongo_settings.uri)
-mongo_collection = mongo_client[mongo_settings.database][mongo_settings.collection]
+from pymongo import MongoClient
+
+from .settings import default_settings
+
+default_mongo_client = MongoClient(default_settings.uri)
+default_db = default_mongo_client[default_settings.database]
